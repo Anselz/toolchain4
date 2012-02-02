@@ -1,0 +1,11 @@
+--- src/cctools/ld64/src/MachOReaderDylib.hpp.origin	2012-02-02 01:38:21.135763804 -0800
++++ src/cctools/ld64/src/MachOReaderDylib.hpp	2012-02-02 01:38:54.571763053 -0800
+@@ -595,7 +595,7 @@
+ 				}
+ 			}
+ 			else {
+-				warning("bad symbol version: %s in dylib %s", name, this->getPath());
++				//warning("bad symbol version: %s in dylib %s", name, this->getPath());
+ 			}
+ 		}	
+ 		else {

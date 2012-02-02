@@ -1,0 +1,15 @@
+--- src/cctools/otool/print_objc.c.origin	2012-02-02 01:06:51.231693122 -0800
++++ src/cctools/otool/print_objc.c	2012-02-02 01:08:09.299691139 -0800
+@@ -28,6 +28,7 @@
+  *
+  * @APPLE_LICENSE_HEADER_END@
+  */
++#if 0
+ #include "stdio.h"
+ #include "string.h"
+ #include "mach-o/loader.h"
+@@ -2192,3 +2193,4 @@
+ 	}
+ 	return(FALSE);
+ }
++#endif

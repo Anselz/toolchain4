@@ -739,6 +739,9 @@ toolchain_cctools() {
 		mkdir -p "$SRC_DIR"
 		rm -fr "${CCTOOLS_DIR}"
 		cp -r odcctools "${CCTOOLS_DIR}"
+                cp -r odcctools "${CCTOOLS_DIR}"
+                patch "${CCTOOLS_DIR}/otool/print_objc.c" < "${HERE}/patches/print_objc.patch"
+                patch "${CCTOOLS_DIR}/ld64/src/MachOReaderDylib.hpp" < "${HERE}/patches/MachOReaderDylib.patch"
 		popd
 	   fi
 

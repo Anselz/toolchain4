@@ -80,8 +80,8 @@ Instructions to add theos build system to toolchain4
     cd /toolchain4
     git submodule add git://github.com/DHowett/theos.git theos
     mv /toolchain4/theos/include /toolchain4/theos/include.bak
-    git submodule add git://github.com/DHowett/theos-nic-templates.git theos/templates/theos-nic-templates
-    git submodule add git://github.com/rpetrich/iphoneheaders.git theos/include
+    git submodule add -f git://github.com/DHowett/theos-nic-templates.git theos/templates/theos-nic-templates
+    git submodule add -f git://github.com/rpetrich/iphoneheaders.git theos/include
     for FILE in /toolchain4/theos/include.bak/*.h; do mv $FILE /toolchain4/theos/include/; done
     rmdir /toolchain4/theos/include.bak
     cp /toolchain4/Projects/IOSurfaceAPI.h /toolchain4/theos/include/IOSurface/.
